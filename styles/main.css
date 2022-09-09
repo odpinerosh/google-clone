@@ -205,6 +205,7 @@
 .page-footer-list > ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     text-decoration: none;
     list-style: none;
@@ -235,4 +236,19 @@
         height: 3rem;
     }
 
+}
+
+@media screen and (max-width: 580px) {
+    .page-footer {
+        height: auto;
+    }
+
+    .page-footer-list {
+        height: 5rem;
+    }
+
+    .page-footer-list > ul > li {
+        margin-top: 1.5rem;
+        
+    }
 }
