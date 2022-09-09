@@ -9,11 +9,13 @@
 .container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 3.5rem 1fr;
+    grid-template-rows: 3.5rem 1fr auto;
     grid-template-areas: 'nav-bar'
-                         'google-main';
+                         'google-main'
+                         'foot-bar';
     margin: 0 auto;
-    width: 95%;
+    padding: 0;
+    width: 100%;
                          
 }
 
@@ -28,6 +30,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding: 0 2rem;
 }
 
 .header-bar_el {
@@ -80,6 +83,7 @@
 .main-section {
     display: flex;
     flex-direction: column;
+    grid-area: google-main;
     justify-content: center;
     align-items: center;
 }
@@ -182,18 +186,21 @@
     justify-content: center;
     height: 4rem;
     width: 100%;
-    
-    
+}
+
+.offered-by > span {
+    margin-right: 0.8rem;
 }
 
 .offered-by > a {
     margin-right: 1rem;
-    margin-left: 0.5rem;
 }
 
 .offered-by > a:hover {
     text-decoration: underline;
 }
+
+/* Estilos del Footer */
 
 .page-footer {
     align-content: center;
@@ -201,6 +208,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    grid-area: foot-bar;
     height: 3.5rem;
     justify-content: space-between;
     padding: 0 3rem;
@@ -250,6 +258,9 @@
 }
 
 @media screen and (max-width: 580px) {
+    
+    
+    
     .page-footer {
         height: auto;
     }
