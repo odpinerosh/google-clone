@@ -175,6 +175,17 @@
     color: #202124;
 }
 
+.offered-by {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 4rem;
+    width: 100%;
+    
+    
+}
+
 .offered-by > a {
     margin-right: 1rem;
     margin-left: 0.5rem;
